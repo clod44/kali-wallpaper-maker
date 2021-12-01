@@ -1,0 +1,45 @@
+p,label,em{
+    color:white;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page{
+    background: chartreuse;
+    width: 70%;
+    height:95%;
+    display:grid;
+    grid-template-rows: 70% 30%;
+    grid-template-areas:
+    "sketch-container"
+    "sketch-options-container";
+}
+#sketch-container{
+    display: grid;
+    background: rgb(61, 18, 61);
+    grid-area: sketch-container;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: "preview-canvas";
+}
+
+.sketch-options-container{
+    background:rgb(14, 14, 78);
+    overflow-y: scroll;
+}
+
+
+
+
